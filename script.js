@@ -1,11 +1,17 @@
 function handleLogin() {
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
-    console.log("ok");
+    
+    if (!email || !password) {
+        alert('Please enter both email and password');
+        return;
+    }
+
     fetch('https://arsa-back.onrender.com/login', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
+            'Accept': 'application/json'
         },
         body: JSON.stringify({
             email: email,
@@ -13,13 +19,20 @@ function handleLogin() {
         })
     })
     .then(response => {
-        if (response.ok) {
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+    })
+    .then(data => {
+        if (data.message === 'Login attempt recorded successfully') {
             window.location.href = 'https://your-redirect-url.com';
         } else {
-
+            alert('Login failed: ' + (data.message || 'Unknown error'));
         }
     })
     .catch(error => {
- alert(error);
+        console.error('Error:', error);
+        alert('Failed to connect to server. Please try again later.');
     });
 }
