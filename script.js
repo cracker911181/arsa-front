@@ -1,6 +1,6 @@
 function handleLogin() {
-    const email = document.querySelector('input[type="text"]').value;
-    const password = document.querySelector('input[type="password"]').value;
+ const email = document.querySelector('.input-field[type="text"]').value;
+    const password = document.querySelector('.input-field[type="password"]').value;
 
     fetch('https://arsa-back.onrender.com/login', {
         method: 'POST',
