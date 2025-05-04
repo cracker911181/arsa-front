@@ -20,6 +20,6 @@ function handleLogin() {
         }
     })
     .catch(error => {
- console.log("ok2");
+ alert(error);
     });
 }
