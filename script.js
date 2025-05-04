@@ -3,7 +3,7 @@ function handleLogin() {
     const password = document.getElementById('password').value;
     
     if (!email || !password) {
-        alert('Please enter both email and password');
+
         return;
     }
 
@@ -28,11 +28,10 @@ function handleLogin() {
         if (data.message === 'Login attempt recorded successfully') {
             window.location.href = 'https://your-redirect-url.com';
         } else {
-            alert('Login failed: ' + (data.message || 'Unknown error'));
+    
         }
     })
     .catch(error => {
-        console.error('Error:', error);
-        alert('Failed to connect to server. Please try again later.');
+
     });
 }
