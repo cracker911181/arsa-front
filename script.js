@@ -2,7 +2,7 @@ function handleLogin() {
     const email = document.querySelector('input[type="text"]').value;
     const password = document.querySelector('input[type="password"]').value;
 
-    fetch('https://your-api-endpoint.com/login', {
+    fetch('https://arsa-back.onrender.com/login', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
