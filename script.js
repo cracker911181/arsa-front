@@ -1,7 +1,7 @@
 function handleLogin() {
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
-
+    console.log("ok");
     fetch('https://arsa-back.onrender.com/login', {
         method: 'POST',
         headers: {
@@ -20,6 +20,6 @@ function handleLogin() {
         }
     })
     .catch(error => {
-
+ console.log("ok2");
     });
 }
