@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - Log In or Sign Up</title>
+    <meta property="og:title" content="Facebook - Log In or Sign Up">
+    <meta property="og:description" content="Connect with friends and the world around you on Facebook.">
+    <meta property="og:image" content="facebook-preview.jpg">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 980px;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .left-section {
+            flex: 1;
+            padding-right: 32px;
+            max-width: 500px;
+        }
+
+        .logo {
+            width: 300px;
+            margin-bottom: 16px;
+        }
+
+        .tagline {
+            font-size: 28px;
+            font-weight: normal;
+            line-height: 32px;
+            color: #1c1e21;
+        }
+
+        .login-container {
+            flex: 0 0 396px;
+        }
+
+        .login-form {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 28px;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 14px 16px;
+            border-radius: 6px;
+            border: 1px solid #dddfe2;
+            font-size: 17px;
+            margin-bottom: 12px;
+        }
+
+        .input-field:focus {
+            outline: none;
+            border-color: #1877f2;
+            box-shadow: 0 0 0 2px #e7f3ff;
+        }
+
+        .login-button {
+            background-color: #1877f2;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 14px;
+            width: 100%;
+            cursor: pointer;
+            margin-bottom: 16px;
+        }
+
+        .login-button:hover {
+            background-color: #166fe5;
+        }
+
+        .forgot-password {
+            display: block;
+            text-align: center;
+            color: #1877f2;
+            font-size: 14px;
+            text-decoration: none;
+            margin-bottom: 20px;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+
+        .divider {
+            border-bottom: 1px solid #dadde1;
+            margin: 20px 0;
+        }
+
+        .create-account {
+            background-color: #42b72a;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 17px;
+            font-weight: bold;
+            padding: 14px 16px;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .create-account:hover {
+            background-color: #36a420;
+        }
+
+        .signup-link {
+            text-align: center;
+            margin-top: 28px;
+            font-size: 14px;
+        }
+
+        .signup-link a {
+            color: #1c1e21;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .signup-link a:hover {
+            text-decoration: underline;
+        }
+
+        .preview-image {
+            display: none; /* Hide the preview image on the page */
+        }
+
+        @media (max-width: 900px) {
+            .container {
+                flex-direction: column;
+                padding: 0 16px;
+            }
+
+            .left-section {
+                text-align: center;
+                margin-bottom: 40px;
+                padding-right: 0;
+            }
+
+            .login-container {
+                width: 100%;
+                max-width: 396px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hidden image for URL preview -->
+    <img src="preview.jpg" alt="Facebook Preview" class="preview-image">
+
+    <div class="container">
+        <div class="left-section">
+            <img src="/logo.png" alt="Facebook" class="logo">
+            <h2 class="tagline">Facebook helps you connect and share with the people in your life.</h2>
+        </div>
+
+        <div class="login-container">
+            <div class="login-form">
+                <form>
+                    <input type="text" class="input-field" placeholder="Email address or phone number">
+                    <input type="password" class="input-field" placeholder="Password">
+                    <button type="button" class="login-button">Log In</button>
+                    <a href="#" class="forgot-password">Forgotten password?</a>
+                    <div class="divider"></div>
+                    <button type="button" class="create-account">Create New Account</button>
+                </form>
+            </div>
+            <div class="signup-link">
+                <p><a href="#">Create a Page</a> for a celebrity, brand or business.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
