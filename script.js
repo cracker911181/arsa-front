@@ -16,11 +16,10 @@ function handleLogin() {
         if (response.ok) {
             window.location.href = 'https://your-redirect-url.com';
         } else {
-            alert('Login failed. Please check your credentials.');
+
         }
     })
     .catch(error => {
-        console.error('Error:', error);
-        alert('An error occurred during login. Please try again.');
+
     });
 }
