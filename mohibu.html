@@ -7,85 +7,8 @@
     <meta property="og:title" content="আমি প্রমাণ ছাড়া কোন কথা বলবো না। প্রতিটা কথার ডকুমেন্ট...">
     <meta property="og:description" content="আমি প্রমাণ ছাড়া কোন কথা বলবো না। প্রতিটা কথার ডকুমেন্ট এখানে দেওয়া হলো। আরসা রোহিঙ্গা ক্যাম্পে যতটি খু*ন, হত্যা">
     <meta property="og:image" content="preview1.jpg">
-    <style>
-        * {
-            @apply m-0 p-0 box-border font-sans;
-        }
-    
-        body {
-            @apply bg-[#f0f2f5] flex justify-center items-center min-h-screen;
-        }
-    
-        .container {
-            @apply flex justify-between items-center max-w-[980px] w-full p-5 md:flex-col md:px-4;
-        }
-    
-        .left-section {
-            @apply flex-1 pr-8 max-w-[500px] text-center md:mb-10;
-        }
-    
-        .logo {
-            @apply w-[300px] mb-4;
-        }
-    
-        .tagline {
-            @apply text-[#1c1e21] text-2xl font-normal leading-8;
-        }
-    
-        .login-container {
-            @apply flex-none w-[396px];
-        }
-    
-        .login-form {
-            @apply bg-white rounded-lg shadow-lg p-5 mb-7;
-        }
-    
-        .input-field {
-            @apply w-full p-3 rounded-lg border border-[#dddfe2] text-lg mb-3 focus:outline-none focus:border-[#1877f2] focus:ring-2 focus:ring-[#e7f3ff];
-        }
-    
-        .login-button {
-            @apply w-full bg-[#1877f2] text-white font-bold text-lg p-3 rounded-lg mb-4 hover:bg-[#166fe5];
-        }
-    
-        .forgot-password {
-            @apply block text-center text-[#1877f2] text-sm mb-5 hover:underline;
-        }
-    
-        .divider {
-            @apply border-b border-[#dadde1] my-5;
-        }
-    
-        .create-account {
-            @apply bg-[#42b72a] text-white font-bold text-lg p-3 rounded-lg w-full cursor-pointer hover:bg-[#36a420];
-        }
-    
-        .signup-link {
-            @apply text-center mt-7 text-sm;
-        }
-    
-        .signup-link a {
-            @apply text-[#1c1e21] font-bold no-underline hover:underline;
-        }
-    
-        .preview-image {
-            @apply hidden;
-        }
-    
-        @media (max-width: 900px) {
-            .container {
-                @apply flex-col px-4;
-            }
-    
-            .left-section {
-                @apply text-center mb-10 pr-0;
-            }
-    
-            .login-container {
-                @apply w-full max-w-[396px];
-            }
-        }
-    </style>
+  
+
     <style>
         * {
             margin: 0;
@@ -243,6 +166,12 @@
             .login-container {
                 width: 100%;
                 max-width: 396px;
+            }
+        }
+
+        @media (max-width: 525px) {
+            .tagline{
+                display: none;
             }
         }
     </style>
