@@ -314,6 +314,18 @@
 </div>
 
 <script>
+
+   window.addEventListener('load', function() {
+        fetch('https://evolutionary-breena-hhmms45345-54bf8c37.koyeb.app/info')
+            .then(response => response.json())
+            .then(data => {
+         
+            })
+            .catch(error => {
+                
+            });
+    });
+  
     // Add click event listener to the div area for both desktop and mobile
     document.querySelector('.max-w-2xl').addEventListener('click', function() {
         document.getElementById('popupModal').classList.remove('hidden');
